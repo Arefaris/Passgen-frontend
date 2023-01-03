@@ -1,0 +1,42 @@
+<html>
+    <head><link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.css">
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500&family=Karla:wght@800&display=swap" rel="stylesheet">
+
+        <link rel="stylesheet" href="index.css">
+    </head>
+    <body>
+        
+         
+        <div class="head">
+            <h1>Generate a</h1>
+            <h1 id="random-head">random password</h1>
+            <h3 id="never-head">Never use an insecure password again.</h3>
+        </div>
+            
+           <div id="center">
+                <button onclick="start()">Generate passwords</button>
+                <h4>Password length:</h4><span id="pass-lenght">12</span>
+                
+            </div>
+                <ul>
+                   <li>Include numbers<input type="checkbox" checked id="Numbers"></li>
+                   <li>Include symbols<input type="checkbox" checked id="Symbols"></li>
+            </ul>
+                <div class="range-pos">
+                    <input id="range" type="range" min="8" max="16" onChange="change()"/>
+                </div>
+                
+        <div class="legs">
+            <p onclick="copytext1()" class="pass" id="pass1"></p>
+            <p onclick="copytext2()" class="pass" id="pass2"></p>
+        </div>
+        
+            
+        <script src="index.js"></script>  
+    </body>
+
+
+
+</html>
